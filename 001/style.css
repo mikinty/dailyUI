@@ -1,0 +1,30 @@
+body {
+  background: #f89705;
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.login {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black; }
+  .login #lower {
+    margin-top: 10px; }
+
+input[type=text] {
+  height: 20px;
+  width: 180px;
+  border-radius: 5px;
+  border: 2px solid white;
+  transition-duration: 0.5s; }
+  input[type=text]:focus {
+    border: 2px solid #0051ff; }
+
+/*# sourceMappingURL=style.css.map */

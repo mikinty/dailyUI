@@ -1,0 +1,41 @@
+body {
+  background: rgb(248, 151, 5);
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+
+  #upper {
+
+  }
+
+  #lower {
+    margin-top: 10px;
+  }
+}
+
+input[type=text] {
+  height: 20px;
+  width: 180px;
+  border-radius: 5px;
+  border: 2px solid white;
+  transition-duration: 0.5s;
+
+
+  // when the user clicks in the box
+  &:focus {
+    border: 2px solid rgb(0, 81, 255);
+  }
+}
