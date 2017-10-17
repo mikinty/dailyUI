@@ -1,3 +1,8 @@
+$loginHeight: 300px;
+$loginWidth: 200px;
+$boxHeight: 35px;
+$padding: 5px;
+
 body {
   background: rgb(248, 151, 5);
   overflow: hidden;
@@ -5,37 +10,76 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  font-family: sans-serif;
 }
 
 .login {
-  width: 300px;
-  height: 200px;
+  width: $loginHeight;
+  height: $loginWidth;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  margin-top: 200px;
 
-  #upper {
-
+  .login-fields {
+    box-sizing: border-box;
+    width: 100%;
+    &#lower {
+      margin-top: 10px;
+    }
   }
-
-  #lower {
-    margin-top: 10px;
-  }
+  
 }
 
-input[type=text] {
-  height: 20px;
-  width: 180px;
-  border-radius: 5px;
+input[type=text], input[type=password] {
+  box-sizing: border-box;
+  height: $boxHeight;
+  width: 100%;
+  border-radius: 3px;
   border: 2px solid white;
   transition-duration: 0.5s;
-
+  padding: $padding;
 
   // when the user clicks in the box
   &:focus {
     border: 2px solid rgb(0, 81, 255);
+  }
+}
+
+#buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  #login {
+
+  }
+
+  #signup {
+
+  }
+}
+
+.button {
+  width: 100px;
+  height: 35px;
+  background: rgb(30, 146, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+
+  transition-duration: 0.5s;
+
+  &:hover {
+    background: rgb(84, 172, 255)
+  }
+
+  span {
+    color: white;
   }
 }
